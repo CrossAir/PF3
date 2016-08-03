@@ -2,30 +2,134 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!--BODY CONTENT-->
+<div class="container main">
+    <div class="container searchbox">
+        <form role="form">
+            <label>Estado</label>
+            <select name="estado" id="estado" class="form-control">
+                <option value="0" selected hidden>Selecciona</option>
+                <option value="Nuevo">Nuevo</option>
+                <option value="Usado">Usado</option>
+            </select>
+            <br>
+            <label for="marcas">Marcas</label>
+            <select name="marcas" id="marcas" class="form-control">
+                <option value="0" selected hidden>Selecciona</option>
+            </select>
+            <br>
+            <label for="modelo">Modelos</label>
+            <select name="modelo" id="modelo" class="form-control">
+                <option value="0" selected hidden>Selecciona</option>
+            </select>
+            <br>
+            <div class="price">
+                <div class="p1">
+                    <label for="modelo">Precio (Min)</label>
+                    <input type="text" class="form-control" placeholder="0">
+                </div>
+                <div class="p2">
+                    <label for="modelo">Precio (Max)</label>
+                    <input type="text" class="form-control" placeholder="0">
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="year">
+                <div class="p1">
+                    <label for="year">Año (Min)</label>
+                    <select name="yearpicker" id="year1" class="form-control">
+                        <option value="0" hidden selected> - </option>
+                    </select>
+                </div>
+                <div class="p2">
+                    <label for="year">Año (Max)</label>
+                    <select name="yearpicker" id="year2" class="form-control">
+                        <option value="0" hidden selected> - </option>
+                    </select>
+                </div>
+            </div>
+            <br><br><br><br>
+            <label>Tipo de auto</label>
+            <select name="tipo" id="tipo" class="form-control">
+                <option value="0" hidden selected>Selecciona</option>
+            </select>
+            <br>
+            <button class="btn btn-primary btn-block"><i class="glyphicon glyphicon-search"></i> Buscar</button>
+        </form>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="container cars">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <span class="car-title"><a href="#">Aqui va el titulo del carro 1</a></span>
+                    <img src="http://www.affordablerentacarandsales.com/wp-content/images/fullsize-car.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <span class="car-title"><a href="#">Aqui va el titulo del carro 2</a></span>
+                    <img src="http://www.affordablerentacarandsales.com/wp-content/images/standard-car.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <span class="car-title"><a href="#">Aqui va el titulo del carro 3</a></span>
+                    <img src="http://www.affordablerentacarandsales.com/wp-content/images/premium-car.jpg" alt="">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://promocarros.com.do/wp-content/uploads/thememakers/cardealer/68/1493/main/575ad1ad87c60.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">RD$795,000</h4>
+                        <h4>
+                            <a href="#">Kia K7 2011</a>
+                        </h4>
+                        <p>Vehículo en excelentes condiciones, confortable y con buena presentación.</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://promocarros.com.do/wp-content/uploads/thememakers/cardealer/22/1182/main/56b4d0deab16b.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">RD$2,430,000</h4>
+                        <h4>
+                            <a href="#">Toyota 4 <br> Runner 2014</a>
+                        </h4>
+                        <p>Vendo Toyota 4 Runner 2014 Limited roja como nueva, excelente condiciones.</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://promocarros.com.do/wp-content/uploads/thememakers/cardealer/32/1202/main/56ce37f76e861.jpeg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">RD$650,000</h4>
+                        <h4>
+                            <a href="#">Toyota <br>Corolla Type S</a>
+                        </h4>
+                        <p>Vehiculo recién importado, es full Sun Roof, tiene alógenos y tiene aros y gomas nuevas.</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
