@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealerProyect", "DealerProyect\DealerProyect.csproj", "{EE3828FA-C408-4833-A8EB-7D9D0228CB19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehiculosEntities", "VehiculosEntities\VehiculosEntities.csproj", "{59DECB12-0AE8-4855-9A1F-D1B06B0A8022}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EE3828FA-C408-4833-A8EB-7D9D0228CB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3828FA-C408-4833-A8EB-7D9D0228CB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3828FA-C408-4833-A8EB-7D9D0228CB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DECB12-0AE8-4855-9A1F-D1B06B0A8022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DECB12-0AE8-4855-9A1F-D1B06B0A8022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DECB12-0AE8-4855-9A1F-D1B06B0A8022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DECB12-0AE8-4855-9A1F-D1B06B0A8022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
