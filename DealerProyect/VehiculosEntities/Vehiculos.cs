@@ -14,10 +14,19 @@ namespace VehiculosEntities
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Marca { get; set; }
 
         [Required]
-        [DisplayFormat(DataFormatString = "{0:C0}")]
+        public string Modelo { get; set; }
+
+        [Required]
+        public int Ano { get; set; }
+
+        [Required]
+        public int Estado { get; set; }
+
+        [Required]
+        [DisplayFormat(DataFormatString = "{0:N0}")]
         public int Price { get; set; }
 
         [Required]
