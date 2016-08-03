@@ -215,6 +215,10 @@
     <Compile Include="DataContexts\VehiculosMigrations\201608030215129_InitialCreate1.Designer.cs">
       <DependentUpon>201608030215129_InitialCreate1.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\VehiculosMigrations\201608030247569_InitialCreate2.cs" />
+    <Compile Include="DataContexts\VehiculosMigrations\201608030247569_InitialCreate2.Designer.cs">
+      <DependentUpon>201608030247569_InitialCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\VehiculosMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -333,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\VehiculosMigrations\201608030215129_InitialCreate1.resx">
       <DependentUpon>201608030215129_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\VehiculosMigrations\201608030247569_InitialCreate2.resx">
+      <DependentUpon>201608030247569_InitialCreate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
